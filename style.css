@@ -65,6 +65,10 @@ ul{
 /* --------------------
 navbar
 -------------------- */
+.space-account
+{
+    margin-right: 30px;
+}
 .navbar{
     background-color: var(--main-color);
     padding: 10px 0;
@@ -75,10 +79,8 @@ navbar
     padding: 10px 0;
 }
 .navbar .navbar-brand{
-    font-size: 30px;
-    color: #ffffff;
-    font-weight: 500;
-    text-transform: capitalize;
+    width: 100%;
+    max-height: 40px;
 }
 .navbar .nav-item{
     padding-left: 40px;
@@ -106,6 +108,26 @@ navbar
 .navbar .nav-item .nav-link:hover::before{
 transform: scaleX(1);
 }
+    /*--------------------------------------------------------------
+    # Header
+    --------------------------------------------------------------*/
+    #header {
+        transition: all 0.5s;
+        z-index: 997;
+        transition: all 0.5s;
+        padding: 15px 0;
+        background: rgba(255, 255, 255, 0.95);
+      }
+      
+      #header.header-transparent {
+        background: transparent;
+      }
+      
+      #header.header-scrolled {
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+      }
+
 /* ----------------
 home page
 --------------- */
@@ -123,12 +145,11 @@ home page
 /* -----------------
 Brand icon
 ----------------- */
-.brand-icon
+.brand-icon >img
 {
     box-shadow: var(--shadow-black-300);
     /* padding: 5px; */
-    /* margin: 1px; */
-    border-radius: 10px;
+    margin: 10px;
 }
 /* -----------------
 End Brand icon
