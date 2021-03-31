@@ -46,6 +46,17 @@ img{
 ul{
     list-style: none;
 }
+
+.section-title h2:before{
+    position:absolute;
+	content:"";
+	left:0;
+	bottom:0;
+	height:2px;
+	width:50px;
+	background:#1a76d1;
+
+}
 @keyframes spin_01{
     0%{
         transform: rotate(0deg);
@@ -134,7 +145,6 @@ home page
 .masthead {
     height: 100vh;
     min-height: 500px;
-    background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -142,6 +152,166 @@ home page
  /* --------------
  end home page 
 --------------- */
+
+
+/*===================
+	Why choose CSS
+=====================*/
+.why-choose .choose-left h3{
+	font-size:24px;
+	font-weight:600;
+	color:#2C2D3F;
+	position:relative;
+	padding-bottom:20px;
+	margin-bottom:24px;
+}
+.why-choose .choose-left h3:before{
+	position:absolute;
+	content:"";
+	left:0;
+	bottom:0;
+	height:2px;
+	width:50px;
+	background:#1a76d1;
+}
+.why-choose .choose-left p{
+	margin-bottom:35px;
+}
+.section-title{
+	text-align: center;
+    margin-bottom: 60px;
+    padding: 0 250px;
+}
+
+
+
+.why-choose .section-title img{
+ height: 70px;
+ width: 70px;
+
+}
+.why-choose .choose-left .list li {
+	color: #868686;
+	margin-bottom: 12px;
+}
+.why-choose .choose-left .list li:last-child{
+	margin-bottom:0px;
+}
+.why-choose .choose-left .list li i{
+	height:15px;
+	width:15px;
+	line-height:15px;
+	text-align:center;
+	background:#1a76d1;
+	color:#fff;
+	font-size:14px;
+	border-radius:100%;
+	padding-left:2px;
+	margin-right:16px;
+}
+/* Start Faq CSS */
+.why-choose{
+	background:#fff;
+    height: 100vh;
+}
+.why-choose .choose-right{
+	height:100%;
+	width:100%;
+	background-image:url('img/fun-bg.jpg');
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+	position:relative;
+}
+.why-choose .choose-right .video {
+	color: #fff;
+	height: 70px;
+	width: 70px;
+	line-height: 70px;
+	text-align: center;
+	border-radius: 100%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -35px;
+	margin-top: -35px;
+	font-size: 21px;
+	background: #1a76d1;
+	padding-left: 4px;
+}
+.why-choose .choose-right .video:hover{
+	transform:scale(1.1);
+}
+.why-choose-play-btn{
+    width: 20px;
+    height: 20px;
+}
+.why-choose .video-image .waves-block .waves {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	background: #fff;
+	opacity: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	border-radius: 100%;
+	-webkit-animation: waves 3s ease-in-out infinite;
+	animation: waves 3s ease-in-out infinite;
+	left: 50%;
+	margin-left: -100px;
+	top: 50%;
+	margin-top: -100px;
+}
+.why-choose .video-image .waves-block .wave-1 {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+.why-choose .video-image .waves-block .wave-2 {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+.why-choose .video-image .waves-block .wave-3 {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+@-webkit-keyframes waves {
+    0% {
+        -webkit-transform: scale(0.2, 0.2);
+        transform: scale(0.2, 0.2);
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+    50% {
+        opacity: 0.9;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    }
+    100% {
+        -webkit-transform: scale(0.9, 0.9);
+        transform: scale(0.9, 0.9);
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+}
+@keyframes waves {
+    0% {
+        -webkit-transform: scale(0.2, 0.2);
+        transform: scale(0.2, 0.2);
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+    50% {
+        opacity: 0.9;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    }
+    100% {
+        -webkit-transform: scale(0.9, 0.9);
+        transform: scale(0.9, 0.9);
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+}
+/*=======================
+	End Why choose CSS
+=========================*/
 /* -----------------
 Brand icon
 ----------------- */
@@ -158,6 +328,22 @@ End Brand icon
 /* ----------------
 Range+mobile screen animation
 ---------------- */
+
+.range-icons img{
+    width: 100px;
+    height: 100px;
+}
+.range-icons{
+    display: flex;
+    align-items: center;    
+}
+
+
+
+
+
+
+
 .mobile-screen{
     height: 100vh;
     padding: 150px 0;
@@ -181,7 +367,7 @@ Range+mobile screen animation
     z-index: 1;
     height: 400px;
     width: 400px;
-    border: 1px solid rgba(255,255,255,0.2);
+    border: 3px solid rgba(255, 115, 0, 0.2);
     border-radius: 50%;
     top: 50%;
     left: 50%;
@@ -192,7 +378,7 @@ Range+mobile screen animation
     position: absolute;
     height: 60px;
     width: 60px;
-    background-color: rgba(255,255,255,0.4);
+    background-color: rgba(243, 109, 0, 0.4);
     border-radius: 50%;
     left: 30px;
     top: 30px; 
