@@ -180,7 +180,7 @@ home page
 .section-title{
 	text-align: center;
     margin-bottom: 60px;
-    padding: 0 250px;
+    padding: 90px 0;
 }
 
 
@@ -212,7 +212,7 @@ home page
 /* Start Faq CSS */
 .why-choose{
 	background:#fff;
-    height: 100vh;
+    
 }
 .why-choose .choose-right{
 	height:100%;
