@@ -152,7 +152,15 @@ home page
  /* --------------
  end home page 
 --------------- */
-
+/* offer section */
+#owl-demo .item{
+    margin: 3px;
+  }
+  #owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 
 /*===================
 	Why choose CSS
@@ -209,7 +217,7 @@ home page
 	padding-left:2px;
 	margin-right:16px;
 }
-/* Start Faq CSS */
+/* Start  CSS */
 .why-choose{
 	background:#fff;
     
@@ -392,3 +400,41 @@ Range+mobile screen animation
 /* ----------------
 End Range+mobile screen animation
 ---------------- */
+
+/* ------------------
+contact us 
+------------------ */
+
+.contact{
+    margin-top: 400px;
+    background-color: var(--black-100);
+}
+.contact-info{
+    
+}
+.contact-form  .row
+{
+    margin: 20px;
+}
+/* ------------------
+End contact us 
+------------------ */
+
+
+
+
+
+/* --------------------
+footer
+-------------------- */
+    .footer
+    { 
+        margin-top: 100px;
+        background-color:#2b2828;
+        color: #f7f7f7;
+        padding: 10px;
+    }
+
+/* --------------------
+ End footer
+-------------------- */
