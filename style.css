@@ -401,6 +401,105 @@ Range+mobile screen animation
 End Range+mobile screen animation
 ---------------- */
 
+/* --------------------
+count that matters
+-------------------- */
+.fun-facts
+{
+    margin-top: 400px;
+}
+.fun-facts{
+	position:relative;
+}
+.fun-facts.section{
+	padding:120px 0;
+}
+.fun-facts{
+  background:url('img/fun-bg.jpg');
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+.fun-facts .single-fun {
+	
+}
+.fun-facts .single-fun i{
+	position: absolute;
+	left: 0;
+	font-size: 62px;
+	color: #fff;
+	height: 70px;
+	width: 70px;
+	line-height: 67px;
+	font-size: 28px;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	border: 2px solid #fff;
+	border-radius: 0px;
+	top: 50%;
+	margin-top: -35px;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	border-radius: 50%;
+}
+.fun-facts .single-fun:hover i{
+	color:#1A76D1;
+	background:#fff;
+	border-color:transparent;
+}
+.fun-facts .single-fun .content {
+	padding-left: 80px;
+}
+.fun-facts .single-fun span {
+	color: #fff;
+	font-weight: 600;
+	font-size: 30px;
+	position: relative;
+	display: block;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s eas;
+	display: block;
+	margin-bottom: 7px;
+}
+.fun-facts h2{
+    margin-bottom: 40px;
+    position: relative;
+    color: #fff !important; 
+}
+
+.fun-facts .single-fun p{
+	color:#fff;
+	font-size:15px;
+}
+/* responsive css */
+.fun-facts.section{
+	padding:70px 0;
+}
+.fun-facts .single-fun {
+	margin: 20px 0;
+}
+/* normalize css */
+.overlay{
+	position:relative;
+}
+.overlay:before{
+	position:absolute;
+	content:"";
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	background:#1a76d1;
+	opacity:0.8;
+}
+
+/* --------------------
+ End count that matters
+-------------------- */
+
+
 /* ------------------
 contact us 
 ------------------ */
@@ -409,12 +508,58 @@ contact us
     margin-top: 400px;
     background-color: var(--black-100);
 }
-.contact-info{
-    
-}
-.contact-form  .row
+.contact-info-item
 {
-    margin: 20px;
+    position: relative;
+    padding-left: 55px;
+}
+.contact-info-item i
+{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    font-size: 16px;
+    color:var(--main-color);
+    border: 1px solid var(--main-color);
+    text-align: center;
+    line-height:  38px;
+
+}
+.contact-info-item h4{
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 0 10px;
+    color: var(--black-900);
+}
+.contact-info-item p{
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+    line-height: 26px;
+    color: var(--black-400);
+}
+.contact-form .form-group
+{
+    margin-bottom: 20px;
+}
+.contact-form .form-control{
+    height: 52px;
+    border: 1px solid transparent;
+    box-shadow: var(--shadow-black-100);
+    border-radius: 30px;
+    padding: 0 24px;
+    color: var(--black-900);
+    background-color: var(--black-000);
+    transition: all 0.5s ease;
+}
+.contact-form .form-control:focus{
+   border-color: var(--main-color);
+}
+.contact-form textarea.form-control{
+    height: 140px;
 }
 /* ------------------
 End contact us 
