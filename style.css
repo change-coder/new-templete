@@ -353,7 +353,7 @@ Range+mobile screen animation
 
 
 .mobile-screen{
-    height: 100vh;
+    
     padding: 150px 0;
     /* background-color: ; */
 
@@ -406,7 +406,6 @@ count that matters
 -------------------- */
 .fun-facts
 {
-    margin-top: 400px;
 }
 .fun-facts{
 	position:relative;
@@ -505,7 +504,6 @@ contact us
 ------------------ */
 
 .contact{
-    margin-top: 400px;
     background-color: var(--black-100);
 }
 .contact-info-item
